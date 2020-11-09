@@ -50,7 +50,7 @@ function handlePriorityOnClick() {
   let taskCounter = 0;
   priorityList.addEventListener("click", function(event) {
     // event.preventDefault();
-    debugger;
+    // debugger;
     // let priority = document.querySelector(`.priority${priorityCounter+1}`);
     let task = document.querySelector(`.task${taskCounter+1}`);
     let priority1 = event.target.children[0];
