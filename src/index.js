@@ -54,7 +54,19 @@ function handlePriorityOnClick() {
     // let priority = document.querySelector(`.priority${priorityCounter+1}`);
     // let task = document.querySelector(`.task${priorityCounter+1}`);
     let priority1 = event.target.children[0];
-    task.style.color = priority.style.color;
+    let priority2 = event.target.children[1];
+    let priority3 = event.target.children[2];
+    
+    // Determine which priority selected and assign color
+    if (priority1.selected) {
+      task.style.color = priority1.style.color;
+    }
+    else if (priority2.selected) {
+      task.style.color = priority2.style.color;
+    }
+    else {
+      task.style.color = priority3.style.color;
+    }
     // priorityCounter += 1;
   });
   // return color;
