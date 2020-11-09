@@ -51,10 +51,10 @@ function handlePriorityOnClick() {
   priorityList.addEventListener("click", function(event) {
     // event.preventDefault();
     debugger;
-    let priority = document.querySelector(`.priority${priorityCounter+1}`);
-    let task = document.querySelector(`.task${priorityCounter+1}`);
+    // let priority = document.querySelector(`.priority${priorityCounter+1}`);
+    // let task = document.querySelector(`.task${priorityCounter+1}`);
     task.style.color = priority.style.color;
-    priorityCounter += 1;
+    // priorityCounter += 1;
   });
   // return color;
 }
