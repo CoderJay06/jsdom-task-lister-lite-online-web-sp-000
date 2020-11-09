@@ -53,6 +53,7 @@ function handlePriorityOnClick() {
     debugger;
     // let priority = document.querySelector(`.priority${priorityCounter+1}`);
     // let task = document.querySelector(`.task${priorityCounter+1}`);
+    let priority1 = event.children[0];
     task.style.color = priority.style.color;
     // priorityCounter += 1;
   });
