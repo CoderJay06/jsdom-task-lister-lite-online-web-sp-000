@@ -50,6 +50,7 @@ function handlePriorityOnClick() {
   let priorityCounter = 0;
   priorityList.addEventListener("click", function(event) {
     // event.preventDefault();
+    debugger;
     let priority = document.querySelector(`.priority${priorityCounter+1}`);
     let task = document.querySelector(`.task${priorityCounter+1}`);
     task.style.color = priority.style.color;
