@@ -47,12 +47,12 @@ function deleteTask(event) {
 function handlePriorityOnClick() {
   createPriorityList();
   const priorityList = document.querySelector(".priority-list");
-  let priorityCounter = 0;
+  let taskCounter = 0;
   priorityList.addEventListener("click", function(event) {
     // event.preventDefault();
     debugger;
     // let priority = document.querySelector(`.priority${priorityCounter+1}`);
-    // let task = document.querySelector(`.task${priorityCounter+1}`);
+    let task = document.querySelector(`.task${priorityCounter+1}`);
     let priority1 = event.target.children[0];
     let priority2 = event.target.children[1];
     let priority3 = event.target.children[2];
@@ -67,7 +67,7 @@ function handlePriorityOnClick() {
     else {
       task.style.color = priority3.style.color;
     }
-    // priorityCounter += 1;
+    priorityCounter += 1;
   });
   // return color;
 }
